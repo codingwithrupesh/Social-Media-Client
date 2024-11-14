@@ -1,0 +1,55 @@
+.Feed{
+    .container{
+        display: flex;
+        gap: 20px;
+        overflow: hidden;
+        height: 100vh;
+        .leftPart{
+            flex: 2;
+            overflow: auto;
+           
+           
+        }
+        .rightPart{
+            margin-top: 10px ; 
+            flex: 1;
+        }
+
+        .title{
+            margin-top: 12px;
+        }
+        .followings{
+            display: flex;
+           flex-direction: column;
+           border: 1px solid var(--border-color);
+           padding: 15px;
+           gap: 10px;
+        }
+        .suggestions{
+            display: flex;
+           flex-direction: column;
+           border: 1px solid var(--border-color);
+           padding: 15px;
+           gap: 10px;
+
+        }
+
+        
+    }
+
+}
+@media only screen and (max-width:600px) {
+    .Feed {
+        padding-inline: 5px;
+        .container {
+            flex-direction: column;
+            overflow: auto;
+            height: auto;
+            .rightPart{
+                width: 100vw;
+            }
+    
+        }
+    }
+    
+}

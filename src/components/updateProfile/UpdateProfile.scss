@@ -1,0 +1,75 @@
+.UpdateProfile{
+
+    .container{
+        display: flex; 
+        padding-inline: 10px;
+        .leftPart{
+            flex: 1 ; 
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        //    .userImg{
+        //     width: 80px;
+        //     height: 80px;
+        //     border-radius: 50%;
+        //     margin-top: 20px;
+            
+        //    }
+        .inputUserImg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .labelImg{
+                cursor: pointer;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                border: 2px dashed var(--border-color);
+                .userImg{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            }
+            .inputImg{
+                display: none;
+            }
+        }
+
+        }
+
+        .rightPart{
+            flex: 3;
+            margin-top: 20px;
+
+            form{
+                border: 1px solid var(--border-color);
+                padding: 16px;
+                border-radius: 4px;
+            }
+
+            input{
+                width: 100%;
+                display: block;
+                border: 1px solid var(--border-color);
+                margin-top: 16px;
+                padding: 8px 16px;
+                border-radius: 4px;
+
+            }
+
+            .submit{
+                width: fit-content;
+            }
+            .deleteAccount{
+                margin-top: 20px;
+                background-color: red;
+            }
+            .deleteAccount:active{
+                background-color: rgba(246, 10, 10, 0.676);
+            }
+        }
+    }
+}
